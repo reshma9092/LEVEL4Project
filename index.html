@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Skill Safari | Rock, Paper, Scissors</title>
+
+  <!-- Bootstrap CSS --> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Google fonts - Lato -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome icon -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <!-- Score Board -->
+  <div class="score-board">
+    <div class="badge" id="user-label">User</div>
+    <div class="badge" id="computer-label">Computer</div>
+    <span id="user-score">0</span>:<span id="computer-score">0</span>
+  </div>
+  <!-- Result -->
+  <div class="result">
+    <p></p>
+  </div>
+  <!-- Choices -->
+  <div class="choices">
+    <div class="choice " id="r">
+      <img src="images/icon-rock.svg" alt="Rock-image" style="width:85px; height: 85px;">
+    </div>
+    <div class="choice" id="p">
+      <img src="images/icon-paper.svg" alt="Paper-image" style="width:85px; height: 85px;">
+    </div>
+    <div class="choice" id="s">
+      <img src="images/icon-scissors.svg" alt="Scissors-image" style="width:85px; height: 85px;">
+    </div>
+  </div>
+  <!-- Make your move -->
+  <p id="action-message">Make your Move</p>
+
+  <!-- Rules Button -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="rules">
+          <button class="btn btn-white px-4 py-2" data-toggle="modal" data-target="#rules">RULES</button>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Rules Modal -->
+  <div class="modal fade" id="rules">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-light text-center bg-warning">
+          <p class="font-weight-bold">RULES</p>
+        </div>
+        <div class="modal-body text-light bg-success font-weight-bold">
+          <p>Rock wins over Scissors</p>
+          <p>Scissors wins over Paper</p>
+          <p>Paper wins over Rock.</p>
+          <button class="btn btn-outline-warning" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>     
+
+</body>
+</html>
